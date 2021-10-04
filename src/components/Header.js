@@ -1,9 +1,13 @@
-import React from 'react'
-
 const Header = () => {
     return (
         <div className="header-component">
-            <h1>Calculate area of a square</h1>
+            <div className="btn-header">
+                <button className="back-btn">back</button>
+            </div>
+            <div className="title-header">
+                <h1>Calculate area of a square</h1>
+            </div>
+            <div></div>
         </div>
     )
 }

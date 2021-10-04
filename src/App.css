@@ -1,16 +1,30 @@
 .header-component {
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  display: flex;
+}
+
+.back-btn {
+  border: none;
   text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .body {
+  max-width: 500px;
   text-align: center;
+  padding: 30px;
+  margin: 30px auto;
+  word-wrap: break-word;
 }
 
-.input-form{
+.input-form {
   margin-bottom: 20px;
 }
 
-.input-form label{
+.input-form label {
   display: block;
 }
 
