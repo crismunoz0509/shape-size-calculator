@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
-const SquareInputs = ({onCalc}) => {
+const RectangleInputs = ({onCalc}) => {
     
     const [length, setLength] = useState(0);
+    const [width, setWidth] = useState(0);
     
     const onCalculate = (e) => {
         e.preventDefault()
 
-        onCalc(length)
+        onCalc(length, width)
 
     }
 
@@ -15,8 +16,12 @@ const SquareInputs = ({onCalc}) => {
         <div>
             <form className="form" onSubmit={onCalculate}> 
                 <div className="input-form">
-                    <label>Length/Width: </label>
+                    <label>Length: </label>
                     <input type="text" value={length} onChange={(e) => setLength(e.target.value)} ></input>
+                </div>
+                <div className="input-form">
+                    <label>Width: </label>
+                    <input type="text" value={width} onChange={(e) => setWidth(e.target.value)}></input>
                 </div>
                 <div>
                     <input type="submit" value="Calculate"></input>
@@ -26,4 +31,4 @@ const SquareInputs = ({onCalc}) => {
     )
 }
 
-export default SquareInputs
+export default RectangleInputs

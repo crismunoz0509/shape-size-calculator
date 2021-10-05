@@ -1,11 +1,16 @@
-const Header = () => {
+import { Link } from 'react-router-dom';
+
+const Header = ( {btnShow, switchBtn} ) => {
+
     return (
         <div className="header-component">
             <div className="btn-header">
-                <button className="back-btn">back</button>
+                <Link to="/select">
+                    {btnShow ? <></> : (<button className="back-btn" onClick={switchBtn}>back</button>)}
+                </Link>
             </div>
             <div className="title-header">
-                <h1>Calculate area of a square</h1>
+                {btnShow ? (<h1>Select A Calculator</h1>) : (<h1>Enter Your Numbers</h1>)}
             </div>
             <div></div>
         </div>

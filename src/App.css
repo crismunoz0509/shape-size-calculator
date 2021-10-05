@@ -1,8 +1,8 @@
 .header-component {
   justify-content: space-around;
   align-items: center;
-  margin: 5px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100px 400px auto;
 }
 
 .back-btn {
@@ -12,11 +12,16 @@
   cursor: pointer;
 }
 
+.select-menu {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+}
+
 .body {
   max-width: 500px;
   text-align: center;
-  padding: 30px;
-  margin: 30px auto;
+  margin: auto auto;
   word-wrap: break-word;
 }
 
