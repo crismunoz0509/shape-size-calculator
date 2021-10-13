@@ -36,3 +36,7 @@
 .calculate {
   margin: 0%;
 }
+
+#clear-btn {
+  margin-top: 20px;
+}

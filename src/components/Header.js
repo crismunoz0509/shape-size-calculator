@@ -5,7 +5,7 @@ const Header = ( {btnShow, switchBtn} ) => {
     return (
         <div className="header-component">
             <div className="btn-header">
-                <Link to="/select">
+                <Link to="/">
                     {btnShow ? <></> : (<button className="back-btn" onClick={switchBtn}>back</button>)}
                 </Link>
             </div>
