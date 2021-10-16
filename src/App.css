@@ -40,3 +40,9 @@
 #clear-btn {
   margin-top: 20px;
 }
+
+#shape-display {
+  width: 300px;
+  height: 300px;
+  margin-right: 38px;
+}
