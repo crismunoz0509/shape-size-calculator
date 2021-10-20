@@ -48,7 +48,7 @@ function App() {
     return (
     <Router>
 
-      <div>
+      <div id="background">
         <Header btnShow={pageOpen} switchBtn={switchPageOpen}/>
         <div className="body">
           <Route path="/" render={() => ( 

@@ -1,3 +1,16 @@
+#root {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #202124;
+}
+
+#background {
+  color: #bdc1c6;
+}
+
 .header-component {
   justify-content: space-around;
   align-items: center;
@@ -47,6 +60,34 @@
   margin-left: -145px;
 }
 
-#lines {
-  cursor: pointer;
+#lines:hover {
+  stroke-width: 2;
+}
+
+#line-text {
+  fill: #bdc1c6;
+}
+
+#input-text {
+  width: 235px;
+  height: 20px;
+}
+
+input#input-text {
+  background-color: #202124;
+  border: 2px solid #bdc1c6;
+  border-radius: 4px;
+  margin-top: 15px;
+  color: #bdc1c6;
+  padding: 10px;
+  font-size: 20px;
+}
+
+input#input-text {
+  transition: height 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+
+input#input-text:focus {
+  height: 40px;
+  font-size: 30px;
 }
