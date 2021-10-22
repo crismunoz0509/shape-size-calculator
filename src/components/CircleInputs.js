@@ -24,7 +24,7 @@ const CircleInputs = ({onCalc}) => {
             <form className="form"onSubmit={onCalculate}>
                 <div className="input-form">
                     <label>Radius: </label>
-                    <input type="text" value={radius} onChange={(e) => setRadius(e.target.value)} onFocus={changeStrokeColor} onBlur={changeStrokeColor}></input>
+                    <input id="input-text" type="text" value={radius} onChange={(e) => setRadius(e.target.value)} onFocus={changeStrokeColor} onBlur={changeStrokeColor}></input>
                 </div>
 
                 <svg id="shape-display" viewBox="1 0 40 40" xmlns="http://www.w3.org/2000/svg">
