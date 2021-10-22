@@ -3,7 +3,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  overflow: hidden;
+  overflow-y: auto;
   background-color: #202124;
 }
 
