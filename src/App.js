@@ -6,7 +6,7 @@ import SquareInputs from './components/SquareInputs';
 import Outputs from './components/Outputs';
 import SelectCalculator from './components/SelectCalculator';
 import RectangleInputs from './components/RectangleInputs';
-import CircleInputs from './CircleInputs';
+import CircleInputs from './components/CircleInputs';
 import TriangleInputs from './components/TriangleInputs';
 
 function App() {

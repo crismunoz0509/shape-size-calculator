@@ -23,6 +23,17 @@
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 4px;
+  background-color: #bdc1c6;
+  transition: background-color .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.back-btn:hover{
+  background-color: #929292;
+}
+
+.back-btn:active{
+  transform: scale(1.08);
 }
 
 .select-menu {
@@ -60,8 +71,13 @@
   margin-left: -145px;
 }
 
+#lines{
+  transition: stroke-width .1s ease-in-out, stroke .5s ease-in-out;
+}
+
 #lines:hover {
-  stroke-width: 2;
+  stroke-width: 2px;
+  stroke: "#0061e0";
 }
 
 #line-text {
@@ -81,9 +97,6 @@ input#input-text {
   color: #bdc1c6;
   padding: 10px;
   font-size: 20px;
-}
-
-input#input-text {
   transition: height 0.4s ease-in-out, font-size 0.4s ease-in-out;
 }
 
